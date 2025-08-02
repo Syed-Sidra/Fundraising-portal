@@ -9,8 +9,8 @@ This is a basic full stack intern portal developed as part of the Round 1 Task f
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Hosting:**
-  - Frontend: [Netlify](https://www.netlify.com/)
-  - Backend: [Render](https://render.com/) 
+  - Frontend: [[Netlify](https://www.netlify.com/)](https://magical-sunshine-38d27b.netlify.app)
+  - Backend: [[Render](https://render.com/) ](https://fundraising-portal-c5tp.onrender.com)
 
 ---
 
