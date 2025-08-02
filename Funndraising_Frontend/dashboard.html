@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="FontAwesome/all.css">
+    </head>
+    <body>
+
+        <div class="dash">
+        <h1>Welcome to Your Intern Dashboard</h1>
+
+  <div class="card">
+    <p><strong>Name:</strong> <span id="name">Mohan</span></p>
+    <p><strong>Referral Code:</strong> <span id="referral">mohan2025</span></p>
+    <p><strong>Total Donations:</strong> <span id="donation">1000</span></p>
+  </div>
+
+  <h2><i class="fa-solid fa-gift"></i> Rewards & Unlockables</h2>
+  <ul>
+    <li>🎉 Raise ₹1000 - Get Certificate</li>
+    <li>🏆 Raise ₹2000 - Get Featured</li>
+    <li>🚀 Raise ₹5000 - Top Intern Badge</li>
+  </ul>
+  <a href="leaderboard.html" style="margin-left: 50px; font-size: 20px;">Leaderboard</a>
+</div>
+  <script>
+    // Fetch backend data
+    fetch('http://localhost:5000/api/user')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('name').textContent = data.name;
+        document.getElementById('referral').textContent = data.referral;
+        document.getElementById('donation').textContent = "₹" + data.donation;
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  </script>
+    </body>
+</html>
